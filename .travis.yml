@@ -1,0 +1,13 @@
+language: go
+script:
+  - env
+  - go version
+deploy:
+  provider: script
+  script: >-
+    echo 'hello'
+  on:
+    tags: true
+    all_branches: true
+env:
+  global:
